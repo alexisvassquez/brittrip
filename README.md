@@ -80,4 +80,5 @@ The CLI prototype lives in `/legacy` for reference.
 
 ---
 
-## For travellers, by someone who wants to move to Hackney Wick.
+> For travellers, by someone who wants to move to Hackney Wick.
+(c) Alexis M Vasquez, AMV Digital Studios - Software Engineer
