@@ -1,0 +1,19 @@
+# Compiled Java
+*.class
+*.jar
+*.aar
+
+# Android/Gradle build output
+build/
+.gradle/
+local.properties
+gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Old CLI artifacts
+*.class
+out/
