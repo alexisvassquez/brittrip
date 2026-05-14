@@ -6,6 +6,7 @@ package com.alexisvassquez.brittrip.converter
 * Sealed interface implemented by each unit enum.
 * UI works with these types, no raw strings passed.
 * */
+
 sealed interface ConversionUnit {
     val label: String         // display name e.g., "Miles"
     val abbreviation: String  // short label e.g., "mi"

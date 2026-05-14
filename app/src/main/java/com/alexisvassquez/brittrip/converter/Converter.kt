@@ -12,6 +12,7 @@ package com.alexisvassquez.brittrip.converter
 * Usage:
 *   val result = Converter.convert(5.0, LengthUnit.MILES, LengthUnit.KILOMETERS)
 * */
+
 object Converter {
     // Exact standard constants
     // same as legacy UnitConverter.java
