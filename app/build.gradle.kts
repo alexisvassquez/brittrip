@@ -67,4 +67,7 @@ dependencies {
 
     // Kotlinx serialization (for parsing JSON response)
     implementation(libs.kotlinx.serialization.json)
+
+    // ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 }
