@@ -131,7 +131,7 @@ fun BritTripHeader() {
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Roundel(modifier = Modifier.size(32.dp))
+            Roundel(modifier = Modifier.size(64.dp))
             Spacer(modifier = Modifier.width(10.dp))
             Column {
                 Text(
@@ -159,45 +159,56 @@ fun BritTripHeader() {
 fun Roundel(modifier: Modifier = Modifier) {
     Box(modifier = modifier, contentAlignment = Alignment.Center) {
         // outer ring
+        // thicker stroke for fatter circle
         Box(
             modifier = Modifier
                 .fillMaxSize()
                 .clip(CircleShape)
                 .background(Color.Transparent)
-                .padding(2.dp)
+                .padding(6.dp)
         )
         Surface(
             modifier = Modifier.fillMaxSize(),
             shape = CircleShape,
             color = Color.Transparent,
-            border = androidx.compose.foundation.BorderStroke(4.dp, TubeRed)
+            border = androidx.compose.foundation.BorderStroke(7.dp, TubeRed)
         ) {}
-        // horizontal bar
+        // Navy horizontal bar across the middle
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(9.dp)
+                .height(22.dp)
                 .background(NavyBlue)
-                .padding(horizontal = 0.dp)
-        )
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(9.dp)
+                .padding(horizontal = 4.dp),
+            contentAlignment = Alignment.Center
         ) {
-            // top red line
+            // top red borderline
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(1.5.dp)
+                    .height(2.dp)
                     .background(TubeRed)
                     .align(Alignment.TopCenter)
             )
-            // bottom red line
+            // "BritTrip" text in bar
+            // centered in box
+            Text(
+                text = "BritTrip",
+                color = Color.White,
+                fontSize = 10.sp,
+                fontWeight = FontWeight.Bold,
+                letterSpacing = 0.5.sp,
+                textAlign = TextAlign.Center,
+                modifier = Modifier
+                    .align(Alignment.Center)
+                    .fillMaxWidth()
+                    .padding(bottom = 2.dp)
+            )
+            // bottom red borderline
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(1.5.dp)
+                    .height(2.dp)
                     .background(TubeRed)
                     .align(Alignment.BottomCenter)
             )
