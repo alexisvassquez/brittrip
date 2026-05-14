@@ -1,19 +1,15 @@
-# Compiled Java
-*.class
-*.jar
-*.aar
-
-# Android/Gradle build output
-build/
-.gradle/
-local.properties
-gradle-wrapper.jar
-
-# IDE
-.idea/
 *.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
 .DS_Store
-
-# Old CLI artifacts
-*.class
-out/
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
